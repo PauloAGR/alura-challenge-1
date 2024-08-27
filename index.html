@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Encriptador - Alura Latam</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="logic.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          class="col-1 col-s-2 nav_logo"
+          src="./assets/Logo.svg"
+          alt="Logo Alura"
+        />
+        <h1 class="col-2 col-s-2 page_title">CHALLENGE ALURA LATAM</h1>
+      </nav>
+    </header>
+    <main>
+      <div class="col-6 col-s-6 encrypt_area">
+        <h3 class="text_encrypt_warning">
+          (!) Solo letras minúsculas y sin acentos
+        </h3>
+        <textarea
+          name="col-12 col-s-12 text_area_encrypt"
+          placeholder="Ingrese el texto a encriptar"
+          id="txtEncrypt" oninput="checkInput()"
+        ></textarea>
+        <div class="encrypt_options">
+          <button class="btnEncrypt" onclick="encryptText()">ENCRIPTAR</button>
+          <button class="btnDecrypt" onclick="decryptText()">DESENCRIPTAR</button>
+        </div>
+      </div>
+      <div class="col-6 col-s-6 decrypt_area">
+        <div class="show_or_hide" id="show_or_hide">
+          <img
+            class="col-4 img_msg_not_found"
+            src="./assets/Muneco.svg"
+            alt="Muneco sin encripcion"
+          />
+        </div>
+        <h3 id="text_msg_no_found">Ningún mensaje fue encontrado</h3>
+        <textarea
+          name="col-12 col-s-12 text_area_decrypt"
+          placeholder="Ingrese el texto a encriptar"
+          id="txtDecrypt" disabled
+        ></textarea>
+        <button class="btnCopy" id="btnCopy" onclick="copyToClipboard()">COPIAR</button>
+      </div>
+    </main>
+    <footer class="col-12 col-s-12">Made with ♥️ - By Paulo Guerrero</footer>
+  </body>
+</html>

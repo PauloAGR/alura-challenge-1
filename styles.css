@@ -1,0 +1,242 @@
+:root{
+  --main-color: #0A3871;
+  --secondary-color: #495057;
+}
+
+header {
+  margin: 1.25%;
+}
+
+header nav img {
+  max-width: 25%;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.page_title {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 15px;
+  min-height: 50dvh;
+}
+
+h3{
+  color: var(--main-color);
+}
+
+textarea {
+  width: 100%;
+  font-size: large;
+  resize: none;
+}
+
+.encrypt_area,
+.decrypt_area {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25%;
+  font-size: large;
+  
+}
+
+.encrypt_area textarea,
+.decrypt_area textarea {
+  color: var(--main-color);
+  flex-grow: 1;
+  min-width: 100%;
+  min-height: 30dvh;
+  margin-top: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+
+.encrypt_options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.img_msg_not_found {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.text_msg_no_found {
+  text-align: center;
+}
+
+.decrypt_area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnCopy,
+.btnEncrypt,
+.btnDecrypt {
+  margin: 0.5rem;
+  width: 50%;
+  border: none;
+  font-size: 1rem;
+  height: 2.25rem;
+  border-radius: 24px;
+}
+
+.btnCopy, 
+.btnDecrypt{
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.btnCopy{
+  display: none;
+}
+.btnEncrypt{
+  background-color:var(--main-color);
+  color: white;
+}
+
+.text_area_decrypt{
+  border-style: none;
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 768px) {
+  .show_or_hide {
+    display: none;
+  }
+
+  main {
+    min-height: 30dvh;
+  }
+
+  .encrypt_options {
+    flex-direction: column;
+  }
+
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
